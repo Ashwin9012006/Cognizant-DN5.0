@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Service Portal - Async & API Integration</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="site-title">Vehicle Service Portal</div>
+        <nav>
+            <ul>
+                <li><a href="#courses">Services</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses-section">
+            <h2>Available Vehicle Services</h2>
+            <div id="courses-loading" class="spinner-box">
+                <div class="spinner"></div>
+                <p>Loading services...</p>
+            </div>
+            <div id="courses-grid" class="course-grid"></div>
+        </section>
+
+        <section id="notifications">
+            <h2>Service Updates & Notifications</h2>
+
+            <div id="notifications-loading" class="spinner-box" style="display: none;">
+                <div class="spinner"></div>
+                <p>Fetching notifications from server...</p>
+            </div>
+
+            <div id="notifications-error" class="error-box" style="display: none;">
+                <p id="error-message"></p>
+                <button id="retry-btn" type="button">Retry Request</button>
+            </div>
+
+            <div id="notifications-list" class="notifications-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vehicle Service Management System. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

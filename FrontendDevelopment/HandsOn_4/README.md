@@ -1,28 +1,45 @@
+# Hands-On 4: Flask Application Structure & Blueprints
+
+> This hands-on demonstrates how to build a modular Flask application using the Application Factory pattern and Blueprints.
 
 ---
 
-### 🌐 Hands-On 04: Async JS & API Integration
+## Objective
 
-```markdown
-# Hands-On 04: Vehicle Service Management System - Async JS & API Integration 🌐
-
-> **Module 04** of the Frontend Development Mastery Series. This module introduces asynchronous JavaScript concepts, Promises, `async`/`await`, REST API fetching, HTTP error handling, and a comparative analysis between native `Fetch` and `Axios`.
-
----
-
-## 🎯 Objectives & Learning Outcomes
-
-- Understand Asynchronous JavaScript concepts: Event Loop, Promises, `.then()` chaining, and `async`/`await`.
-- Perform HTTP requests to external REST APIs (e.g., JSONPlaceholder) to fetch vehicle user profiles and service packages.
-- Implement robust UI state management for asynchronous operations (loading spinners, error banners, fallback UI).
-- Evaluate architectural trade-offs between native browser `Fetch API` and third-party HTTP clients like `Axios`.
+- Learn Flask project organization.
+- Implement Blueprints.
+- Configure applications.
+- Handle JSON responses and errors.
 
 ---
 
-## 📁 File Structure
+## Features
 
-```text
-handson_04/
-├── app.js       # Asynchronous API fetching logic, promise handlers, and dynamic UI rendering
-├── index.html   # HTML container featuring user selection dropdown, loading indicators, and card grid
-└── styles.css   # Styling for loading spinners, error alerts, and async data cards
+- Application Factory
+- Blueprint Routing
+- Configuration Class
+- JSON Responses
+- Input Validation
+- Global Error Handling
+
+---
+
+## API Endpoints
+
+| Method | Endpoint |
+|---------|----------|
+| GET | `/api/courses` |
+| POST | `/api/courses` |
+
+---
+
+## Technologies Used
+
+- Python
+- Flask
+
+---
+
+## Learning Outcome
+
+Successfully created a modular Flask application following best practices.

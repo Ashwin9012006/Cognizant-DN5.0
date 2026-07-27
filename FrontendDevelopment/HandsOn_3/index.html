@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Service Portal - Dynamic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="site-title">Vehicle Service Portal</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#courses">Services</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Vehicle Service Portal</h1>
+            <p>Manage your vehicle maintenance, search available service packages, and monitor service details.</p>
+        </section>
+
+        <section id="courses">
+            <h2>Available Maintenance Packages</h2>
+
+            <div class="controls">
+                <input type="text" id="search-courses" placeholder="Search services...">
+                <button type="button" id="sort-credits">Sort by Credits</button>
+            </div>
+
+            <div id="selected-course" class="selected-box">
+                Select a service card to view details.
+            </div>
+
+            <div class="course-grid"></div>
+
+            <p id="total-credits">Total Credits: 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vehicle Service Management System. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,26 +1,81 @@
-# Hands-On 2
+# Hands-On 2 - Django Models, ORM & Admin Interface
 
-## Topic
+## Objective
 
-Django Models, ORM and Admin Interface
+This hands-on focuses on designing database models using Django ORM, configuring the Django Admin interface, and performing database operations using ORM queries.
 
-## Tasks Completed
+---
 
-- Created Customer model
-- Created Vehicle model
-- Created ServiceRecord model
-- Registered models in Django admin
-- Created migrations
-- Applied migrations
-- Created superuser
-- Added sample data using Django admin
+## Features
 
-## Models
+- Django Models
+- Relationships
+- Django ORM
+- Django Admin
+- Aggregation
+- Query Optimization
+- Database Constraints
 
-- Customer
-- Vehicle
-- ServiceRecord
+---
 
-## Admin URL
+## Database Models
 
-http://127.0.0.1:8000/admin/
+The following models were created:
+
+- Department
+- Course
+- Student
+- Enrollment
+
+Relationships were implemented using ForeignKey associations.
+
+---
+
+## Admin Configuration
+
+Registered all models in the Django Admin panel.
+
+Customized the Course model with:
+
+- list_display
+- search_fields
+- list_filter
+
+---
+
+## ORM Operations
+
+Performed the following operations:
+
+- Record creation
+- Filtering
+- Aggregation
+- JOIN optimization using `select_related()`
+- Atomic updates using `F()` expressions
+- Constraint validation
+
+---
+
+## Verification
+
+The ORM verification script tested:
+
+- Department-based filtering
+- Course count aggregation
+- Optimized JOIN queries
+- Budget updates
+- Duplicate enrollment prevention
+
+---
+
+## Technologies Used
+
+- Django
+- Django ORM
+- SQLite
+
+---
+
+## Outcome
+
+Successfully implemented relational database models, configured the Django Admin interface, and performed efficient ORM operations with built-in constraint validation.
